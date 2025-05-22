@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Μητρώο Λειτουργών</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Μητρώο Λειτουργών</h1>
+  <div class="container">
+    <div id="statusBox" class="status-box"></div>
+
+    <label>Αναζήτηση με Αριθμό Μητρώου:</label>
+    <input type="text" id="searchInput" placeholder="π.χ. x31233">
+
+    <label>Πληροφορίες προς εμφάνιση:</label>
+    <select id="fieldSelect">
+      <option value="all">Όλες</option>
+      <option value="0">Αριθμός Μητρώου</option>
+      <option value="1">Όνομα</option>
+      <option value="2">Επώνυμο</option>
+      <option value="3">Πατρώνυμο</option>
+      <option value="4">Εταιρεία</option>
+      <option value="5">Κατάσταση</option>
+    </select>
+
+    <button onclick="searchUser()">Αναζήτηση</button>
+    <div class="info-box" id="resultBox"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
